@@ -1,0 +1,6 @@
+{
+  "name": "@lhc-ui/ts-config",
+  "main": "index.js", 
+  "license": "MIT",
+  "private":true
+}
