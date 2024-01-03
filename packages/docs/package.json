@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build-vite": "tsc && vite build",   
+    "build-vite": "tsc && vite build",
     "build": "storybook build",
     "dev": "npm run storybook",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -13,6 +13,10 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@lhc-ui/react": "*",
+    "@lhc-ui/tokens": "*",
+    "@lhc-ui/ts-config": "*",
+    "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
