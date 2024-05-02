@@ -4,10 +4,10 @@
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
-  "types":"./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "dev": " tsup src/index.ts --format esm,cjs --dts --watch",
-    "build": "tsup src/index.ts --format esm,cjs --dts"
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react ",
+    "dev": " tsup src/index.tsx --format esm,cjs --dts --external react --watch"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +15,13 @@
   "devDependencies": {
     "@lhc-ui/tokens": "*",
     "@lhc-ui/ts-config": "*",
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "react": "^18.2.0",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@stitches/react": "^1.2.8"
   }
 }
