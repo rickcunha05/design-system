@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from "@storybook/react";
-import { Box, BoxProps } from "@lhc-ui/react";
+import { Box, BoxProps, Text } from "@lhc-ui/react";
 
 export default {
   title: "Surface/Box",
@@ -7,7 +7,7 @@ export default {
   args: {
     children: (
       <>
-        <span> Testando o elemento em tela </span>
+        <Text> Testando o elemento em tela </Text>
       </>
     ),
   },
