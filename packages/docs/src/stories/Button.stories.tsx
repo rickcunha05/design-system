@@ -5,12 +5,33 @@ import { ArrowRight } from "phosphor-react";
 export default {
   title: "Form/Button",
   component: Button,
+  //args definimos os valores default dos componentes
   args: {
     children: "Send",
+    variant: "primary",
+    disable: "disabled",
   },
+  //argsTypes definimos os valores que os componentes tem
   argTypes: {
-    onclick: {
-      action: "onClick",
+    variant: {
+      options: ["primary", "secondary", "tertiary"],
+      control: {
+        type: "inline-radio",
+      },
+    },
+    size: {
+      options: ["sm", "md"],
+      control: {
+        type: "inline-radio",
+      },
+    },
+    disabled: {
+      control: {
+        type: "boolean",
+      },
+    },
+    onClick: {
+      action: "click",
     },
   },
 } as Meta<ButtonProps>;
