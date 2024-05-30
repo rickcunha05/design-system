@@ -33,6 +33,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-           env:
           TURBO_TOKEN: ZGpFXslHmoutXz8zID3sa2Zd
-          TURBO_TEAM: rickcunha  
+          TURBO_TEAM: rickcunha
