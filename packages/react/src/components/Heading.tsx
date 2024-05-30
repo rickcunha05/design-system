@@ -25,3 +25,4 @@ export const Heading = styled("h2", {
 });
 
 export interface HeadingProps extends ComponentProps<typeof Heading> {}
+Heading.displayName = "Heading";
