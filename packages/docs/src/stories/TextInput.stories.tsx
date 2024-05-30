@@ -28,6 +28,7 @@ export const Primary: StoryObj<TextProps> = {
 export const WithPrefix: StoryObj<TextProps> = {
   args: {
     prefix: "cal.com/",
+    placeholder: "your-username",
   },
 };
 export const Disabled: StoryObj<TextProps> = {
